@@ -1,0 +1,123 @@
+.samurai{
+	position: relative;
+	left: 30px;
+}
+.s{
+	width: 100%;
+	height: 800px;
+}
+body{
+	background: url(images/samurai-back.jpg);
+}
+.forward-button:hover{
+	background-color: orange;
+}
+.back-button:hover{
+	background-color: orange;
+}
+.back-button{
+	background-color: red;
+	content: url('http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/black-ink-grunge-stamps-textures-icons-arrows/003683-black-ink-grunge-stamp-textures-icon-arrows-double-arrowhead-left.png');
+	width: 100px;
+	position:relative;
+	bottom: 610px;
+	z-index: 3;
+}
+.forward-button{
+	content: url('http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/black-ink-grunge-stamps-textures-icons-arrows/003683-black-ink-grunge-stamp-textures-icon-arrows-double-arrowhead-left.png');
+	transform: scalex(-1);
+	width: 100px;
+	background-color: red;
+	position: relative;
+	left: 1206px;
+	bottom: 610px;
+	z-index: 3;
+}
+#head{
+	background: url(images/samurai-head.jpeg);	
+	width: 100%;
+	height: 100px;
+}
+
+#kensei-name{
+	position: relative;
+	z-index: 3;
+	color: white;
+	left: 260px;
+	bottom: 700px;
+}
+#kensei{
+	position: relative;
+	z-index: 3;
+	left: 160px;
+	bottom: 710px;
+	width: 350px;
+	height: 100px;
+}
+#kensei-bio{
+	color: white;
+	font-size: 25px;
+}
+#orochi-name{
+	position: relative;
+	z-index: 3;
+	color: white;
+	left: 260px;
+	bottom: 700px;
+}
+#orochi{
+	position: relative;
+	left: 160px;
+	bottom: 710px;
+	width: 350px;
+	height: 100px;
+}
+#orochi-bio{
+	color: white;
+	font-size: 25px;
+}
+#shugoki-name{
+	position: relative;
+	z-index: 3;
+	color: white;
+	left: 260px;
+	bottom: 700px;
+}
+#shugoki{
+	position: relative;
+	z-index: 3;
+	left: 160px;
+	bottom: 710px;
+	width: 350px;
+	height: 100px;
+}
+#shugoki-bio{
+	color: white;
+	font-size: 25px;
+}
+a{
+	font-size: 45px;
+	text-decoration: none;
+	color: black;
+}
+#kl{
+	position: relative;
+	left: 100px;
+	top: 20px;
+}
+#vl{
+	position: relative;
+	left: 350px;
+	top: 20px;
+}
+#sl{
+	color: white;
+	position: relative;
+	left: 600px;
+	top: 20px;
+}
+#home{
+	position: relative;
+	left: 800px;
+	top: 20px;
+}

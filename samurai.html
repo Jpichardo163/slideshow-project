@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="samurai.css">
+	<title></title>
+</head>
+<body>
+<div id="head">
+	<a id="kl" href="knights.html">Knights</a>
+	<a id="vl" href="vikings.html">Vikings</a>
+	<a id="sl" href="samurai.html">Samurai</a>
+	<a id="home" href="front.html">Home</a>
+</div>
+<div class="samurai" ><img class="s" src="images/kensei.jpg">
+	<h1 id="kensei-name">Kensei</h1>
+	<div id="kensei"><p id="kensei-bio">The living incarnations of Bushidō, the samurai way of the warrior, or as close as one can get. Masters of multiple martial arts, they are trained from infancy to fight and die for their emperor or their fellow samurai without asking why. Kensei wear heavy armor and fight with the nodachi, a longer version of the katana that cleaves enemies in a few elegant and powerful strikes. Kensei spend their lives fighting and training as they strive to attain a level of perfection few other warriors can ever hope to achieve.</p></div></div>
+<div class="samurai" ><img class="s" src="images/orochi.jpg">
+	<h1 id="orochi-name">Orochi</h1>
+	<div id="orochi"><p id="orochi-bio">The Imperial assassins of the Samurai. They roam the battlefield like ghosts, terrorizing and slaughtering those unfortunate enough to cross their path. Lightly armored and trained in the arts of stealth and deception, the Orochi dispatches enemies with a katana. Usually loyal beyond reproach, the Orochi holds the darker samurai secrets of dealing death in myriad ways, from throwing deadly knives to using a poisoned blade.</p></div></div>
+<div class="samurai" ><img class="s" src="images/shugoki.jpg">
+	<h1 id="shugoki-name">Shugoki</h1>
+	<div id="shugoki"><p id="shugoki-bio">Shugoki appear slow and cumbersome. Don’t let that fool you -- they possess the strength of a demon and an unbreakable will. It takes incredible fortitude to be the guardians of your people. You must defend them at all costs and put their needs above your own. This has never been an issue for the Shugoki. Their weapon of choice seems unwieldy. But in their hands, it is as deadly and precise as any blade.</p></div></div>
+<a class="back-button" onclick="plusdivs(-1)">&#10094;</a>
+<a class="forward-button" onclick="plusdivs(+1)">&#10095;</a>
+<script type="text/javascript">
+	var slides = 1;
+	showdivs(slides);
+	
+	function plusdivs(n){
+		showdivs(slides += n);
+	}
+	function showdivs(n){
+		var a ;
+		var b = document.getElementsByClassName("samurai");
+	if(n > b.length){slides = 1}
+	if(n < 1){slides = b.length}
+	for(a = 0; a < b.length; a++){
+		b[a].style.display = "none";
+	}
+		b[slides - 1].style.display = "block";
+	}
+</script>
+</body>
+</html>

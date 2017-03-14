@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="vikings.css">
+	<title></title>
+</head>
+<body>
+<div id="head">
+	<a id="kl" href="knights.html">Knights</a>
+	<a id="vl" href="vikings.html">Vikings</a>
+	<a id="sl" href="samurai.html">Samurai</a>
+	<a id="home" href="front.html">Home</a>
+</div>
+<div class="vikings" ><img src="images/raider.jpg">
+	<h1 id="raider-name">Raider</h1>
+	<div id="raider"><p id="raider-bio">Fighting with heavy two-handed axes, Raiders are always found at the forefront of the Viking horde, hacking through enemies crazy enough to stand in their way. They are clad in leather and iron rings, with their bodies covered by tattoos – souvenirs from past battles, which they bear proudly. These relentless warriors embody the Viking ideals: boundless bravery, spotless integrity, and unbridled passion. They know the moment of their death has already been chosen upon birth, so no Viking fears to follow their destiny. Of course, they all intend to bring as many foes with them as they can.</p></div></div>
+<div class="vikings" ><img src="images/berseker.jpg">
+	<h1 id="berserker-name">Berserker</h1>
+	<div id="berserker"><p id="berserker-bio">Chaotic and brutal dual-axe-wielding Vikings. Their savage love of combat strikes fear into the hearts of most, friend and foe alike. The Berserker fights relentlessly, capable of vanquishing foes before they can mount a decent defense. Unconcerned with their personal safety, they care little for their own defense, focusing instead on killing as many enemies as they can.</p></div></div>
+<div class="vikings" ><img src="images/valkyrie.jpg">
+	<h1 id="valkyrie-name">Valkyrie</h1>
+	<div id="valkyrie"><p id="valkyrie-bio">The Valkyries have made a deal with the gods. They will fight and earn glory so that those who can’t will be counted in the halls of Valhalla. They are scouts and trackers who use their spears and shields to deadly effect. They are chosen by the gods—pray that you never encounter one on the battlefield.</p></div></div>
+<a class="back-button" onclick="plusdivs(-1)">&#10094;</a>
+<a class="forward-button" onclick="plusdivs(+1)">&#10095;</a>
+<script type="text/javascript">
+	var slides = 1;
+	showdivs(slides);
+	
+	function plusdivs(n){
+		showdivs(slides += n);
+	}
+	function showdivs(n){
+		var a ;
+		var b = document.getElementsByClassName("vikings");
+	if(n > b.length){slides = 1}
+	if(n < 1){slides = b.length}
+	for(a = 0; a < b.length; a++){
+		b[a].style.display = "none";
+	}
+		b[slides - 1].style.display = "block";
+	}
+</script>
+</body>
+</html>

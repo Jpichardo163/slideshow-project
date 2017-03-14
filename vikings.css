@@ -1,0 +1,119 @@
+.vikings{
+	position: relative;
+	left: 30px;
+}
+body{
+	background: url(images/viking-back.jpg);
+}
+.forward-button:hover{
+	background-color: orange;
+}
+.back-button:hover{
+	background-color: orange;
+}
+.back-button{
+	background-color: red;
+	content: url('http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/black-ink-grunge-stamps-textures-icons-arrows/003683-black-ink-grunge-stamp-textures-icon-arrows-double-arrowhead-left.png');
+	width: 100px;
+	position:relative;
+	bottom: 610px;
+	z-index: 3;
+}
+.forward-button{
+	content: url('http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/black-ink-grunge-stamps-textures-icons-arrows/003683-black-ink-grunge-stamp-textures-icon-arrows-double-arrowhead-left.png');
+	transform: scalex(-1);
+	width: 100px;
+	background-color: red;
+	position: relative;
+	left: 1206px;
+	bottom: 610px;
+	z-index: 3;
+}
+#head{
+	background: url(images/viking-head.jpg);	
+	width: 100%;
+	height: 100px;
+}
+
+#raider-name{
+	position: relative;
+	z-index: 3;
+	color: black;
+	left: 260px;
+	bottom: 700px;
+}
+#raider{
+	position: relative;
+	z-index: 3;
+	left: 160px;
+	bottom: 710px;
+	width: 350px;
+	height: 100px;
+}
+#raider-bio{
+	color: black;
+	font-size: 25px;
+}
+#berserker-name{
+	position: relative;
+	z-index: 3;
+	color: black;
+	left: 260px;
+	bottom: 700px;
+}
+#berserker{
+	position: relative;
+	left: 160px;
+	bottom: 710px;
+	width: 350px;
+	height: 100px;
+}
+#berserker-bio{
+	color: black;
+	font-size: 25px;
+}
+#valkyrie-name{
+	position: relative;
+	z-index: 3;
+	color: black;
+	left: 260px;
+	bottom: 700px;
+}
+#valkyrie{
+	position: relative;
+	z-index: 3;
+	left: 160px;
+	bottom: 710px;
+	width: 350px;
+	height: 100px;
+}
+#valkyrie-bio{
+	color: black;
+	font-size: 25px;
+}
+a{
+	font-size: 45px;
+	text-decoration: none;
+	color: lightblue;
+}
+#kl{
+	position: relative;
+	left: 100px;
+	top: 20px;
+}
+#vl{
+	color: orange;
+	position: relative;
+	left: 250px;
+	top: 20px;
+}
+#sl{
+	position: relative;
+	left: 400px;
+	top: 20px;
+}
+#home{
+	position: relative;
+	left: 570px;
+	top: 20px;
+}

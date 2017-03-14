@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="knights.css">
+	<title></title>
+</head>
+<body>
+<!-->setting up the navigation bar<!-->
+<div id="head">
+	<a id="kl" href="knights.html">Knights</a>
+	<a id="vl" href="vikings.html">Vikings</a>
+	<a id="sl" href="samurai.html">Samurai</a>
+	<a id="home" href="front.html">Home</a>
+</div>
+<!-->this sets up the slides and the information contained within them, i used a div so i could have the text overlayed on the picture<!-->
+<div class="knights" ><img src="images/warden.jpg">
+	<h1 id="warden-name">Warden</h1>
+	<div id="warden"><p id="warden-bio">The Wardens are powerful, noble warriors dedicated to the defense of their land and their people. Striking a balance between defense and offense, wardens wear partial plate armor with chainmail and leather. Wardens wield massive two-handed longswords for slashing enemies and blocking attacks. Trained to be proud, loyal, and brilliant diplomats, the Wardens are expected to embody the highest values of Knighthood. Many set out to achieve this, few do.</p></div></div>
+<div class="knights" ><img src="images/conqueror.jpg">
+	<h1 id="conqueror-name">Conqueror</h1>
+	<div id="conqueror"><p id="conqueror-bio">Ex-prisoners and forced conscripts who have risen to the rank of elite soldier. Originally pressed into military service as sword fodder, those who are skilled enough to survive are promoted out of the rank and file and given heavy infantry training. They are heavily armored warriors, relying on a defensive style and their massive flails to whittle away at their opponent’s stamina until they fall under the Conquerors’ massive onslaught. Climbing from the lowest ranked to this prestigious role in the Knight’s forces, Conquerors have earned the respect of their peers through determination and feats of arms.</p></div></div>
+<div class="knights" ><img src="images/lawbringer.jpg">
+	<h1 id="lawbringer-name">Lawbringer</h1>
+	<div id="lawbringer"><p id="lawbringer-bio">The Lawbringers are justice in Ashfeld. They enforce the laws and dispense punishment and retribution without mercy. Their armor is without equal, their signature weapon a grim reminder of the ultimate punishment for lawlessness. They will go wherever they are needed – pray that you are on the right side when they arrive.</p></div></div>
+<a class="back-button" onclick="plusdivs(-1)">&#10094;</a>
+<a class="forward-button" onclick="plusdivs(+1)">&#10095;</a>
+<script type="text/javascript">
+	//this is the javascript we went over in class with some slight modifications in the variables
+	var slides = 1;
+	showdivs(slides);
+	
+	function plusdivs(n){
+		showdivs(slides += n);
+	}
+	function showdivs(n){
+		var a ;
+		var b = document.getElementsByClassName("knights");
+	if(n > b.length){slides = 1}
+	if(n < 1){slides = b.length}
+	for(a = 0; a < b.length; a++){
+		b[a].style.display = "none";
+	}
+		b[slides - 1].style.display = "block";
+	}
+</script>
+</body>
+</html>
